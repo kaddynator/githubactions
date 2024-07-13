@@ -10,9 +10,16 @@ jobs:
       run: echo "My frist github action jpb"
     - name: Action checkout
       uses: actions/checkout@v4
-    - name: List files
-      run: ls
-    - name: Read file
-      run: cat README.md
-    - name: test
-      run: cat README.md
+    # - name: List files
+    #   run: ls
+    # - name: Read file
+    #   run: cat README.md
+    # - name: test
+    #   run: cat README.md
+    - name: List and Read file
+      run: |
+        echo "My first fithub action job"
+        ls -ltra
+        cat README.md
+    - name: Generate ASCII artwork
+      run: cowsay -f dragon "Run for cover" >> dragon.txt
