@@ -8,6 +8,8 @@ jobs:
     steps:
     - name: Welcome message
       run: echo "My frist github action jpb"
+    - name: Action checkout
+      uses: actions/checkout@v4
     - name: List files
       run: ls
     - name: Read file
