@@ -10,5 +10,11 @@ jobs:
     steps:
     - name: Action checkout
       uses: actions/checkout@v4
+
+    - name: list the file
+      run: ls -lart
+
     - name: executing shell script
-      run: ./ascii-script.sh
+      run: |
+        chmod _x ascii-script.sh
+        ./ascii-script.sh
